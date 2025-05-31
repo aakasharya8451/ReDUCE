@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Download Manager Popup",
+  "version": "0.3",
+  "description": "Unified download manager inside popup with active/history tabs.",
+  "permissions": [
+    "downloads",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "pages/popup.html",
+    "default_icon": {
+      "16": "icons/neon-gallery.png",
+      "48": "icons/neon-gallery.png",
+      "128": "icons/neon-gallery.png"
+    }
+  },
+  "icons": {
+    "16": "icons/neon-gallery.png",
+    "48": "icons/neon-gallery.png",
+    "128": "icons/neon-gallery.png"
+  }
+}
