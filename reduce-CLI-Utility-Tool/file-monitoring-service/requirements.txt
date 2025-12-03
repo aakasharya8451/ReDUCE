@@ -1,0 +1,4 @@
+requests
+watchdog
+pyxattr; platform_system=="Linux" or platform_system=="Darwin"
+pyinstaller
